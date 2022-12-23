@@ -1,9 +1,9 @@
 <img src="https://lh3.googleusercontent.com/hr_crs_themes/AGvgesTv2V6zKXpE1Td5jGGF2FMb-dMnTNEj2CsVJrvbX5kJogd-X6Nnlmn0djcWZbIUv7qe7vXDxsmKEMHki2Srl5z9U9Y4i6_4WkJEGN0yK7rbviXSZP88b98=s1280" />
 
 <p align='center'>
-<img src="https://img.shields.io/github/license/erison7596/Projeto1_OnePageSite_MuraTech?color=%23835afd" alt='license'/>
-  <img src="https://img.shields.io/github/forks/erison7596/Projeto1_OnePageSite_MuraTech?color=%23835afd" alt='Forks'/>
-  <img src="https://img.shields.io/github/stars/erison7596/Projeto1_OnePageSite_MuraTech?color=%23835afd" alt='stars'/>
+<img src="https://img.shields.io/github/license/erison7596/Projeto1_OnePageSite_MouraTech?color=%23835afd" alt='license'/>
+  <img src="https://img.shields.io/github/forks/erison7596/Projeto1_OnePageSite_MouraTech?color=%23835afd" alt='Forks'/>
+  <img src="https://img.shields.io/github/stars/erison7596/Projeto1_OnePageSite_MouraTech?color=%23835afd" alt='stars'/>
 </p>
 
 # Projeto 1 HTML, CSS e SASS
