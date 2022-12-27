@@ -37,15 +37,303 @@ $colorsLikert: (
     margin: 0;
     padding: 0;
 }
+body {
+  font: 400 1rem 'Roboto', sans-serif;
+}
+.menu{
+    width: 100vw;
+    max-width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: $backgroundSecondaryColor;
+    align-items: center;
+    #logo{
+      padding-top: 5vw;
+      width: 13vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 1em;
+      
+    }
+  .links{
+    width: 100%;
+    list-style: none;
+    height: 3em;
+    display: flex;
+    justify-content: end;   
+    li{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 6.5em;
+      text-align: center;
+      a{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: $fontSecondaryColor;
+      }
+    }
+  }
+}
+.menu_mob{
+  display: none;
+}
+#container-inicial{
+  //imagem transparente
+  background-image: url("../img/Destaque_o20.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  max-width: 100%;
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1{
+    color: $fontDefaultColor;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  h2{
+    color: $fontDefaultColor;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1em;
+  }
+}
+.html{
+  color: $primaryHtmlColor;
+}
+.css{
+  color: $primaryCssColor;
+}
+.js{
+  color: $primaryJsColor;
+}
+#container-html{
+  background-image: $gradienteHTML;
+  width: 100%;
+  height: 100vh;
+}
+#container-css{
+  background-image: $gradienteCSS;
+  width: 100%;
+  height: 100vh;
+}
+#container-js{
+  background-image: $gradienteJS;
+  width: 100%;
+  height: 100vh;
+}
+#container-links{
+  background-image: $gradienteLinks;
+  width: 100%;
+  height: 100vh;
+}
+.container{
+  display: none;
+}
+#footer{
+  color: $fontSecondaryColor;
+  background-color: $backgroundSecondaryColor;
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  p{
+    text-align: center;
+  }
+}
+.back-to-top {
+  background-color: #38322e;
+  text-decoration: none;
+  border-radius: 65px;
+  bottom: 14px;
+  box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
+  color: #d9a000;
+  cursor: pointer;
+  height: 40px;
+  position: fixed;
+  right: 22px;
+  width: 40px;
+  z-index: 3;
+  display: none;
+&::after {
+    content: '▲';
+    display: flex;
+    justify-content: center;
+    padding-left: 1px;
+    padding-top: 10px;
+  }
+}
+.back-to-top.display.active {
+  display: block;
+}
 
 //media queries
 //Smartphones em modo retrato
 @media only screen and (max-width: map-get($breakpoints, xs)) and (orientation: portrait) {
-       
+ 
 }
 //modo retrato
 @media only screen and (max-width: map-get($breakpoints, sm)) and (orientation: portrait) {
+   .menu_mob{
+    width: 100vw;
+    max-width: 100%;
+    height: 8vh;
+    display: inline-block;
+    justify-content: space-between;
+    background-color: $backgroundSecondaryColor;
+    align-items: center;
+    flex-direction: wrap;
+
+      #logo{
+        padding-top: 2vw;
+        width: 13vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1em;
+        position: relative;
+        
+      }
+      ul{
+        display: flex;
+        padding-bottom:20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        width: 100%;
+        height: 25vh;
+        background-color: $backgroundSecondaryColor;
+        li{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 6vh;
+          a{
+            color: $fontSecondaryColor;
+            text-decoration: none;
+            font-size: 1.5em;
+          }
+        }
+      }
+   }
+   .baixo{
+    display: none;
+   }
+   .baixo.active{
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+   }
+    .menu{
+      display: none;
+    }
+    .container{
+      float: right;
+      display: block;
+      justify-content: end;
+      padding-right: 1em;
+      
+    }
     
+  
+   .btn {top: 0; left: 0px;cursor: pointer;
+    padding-bottom: 5px;
+   }
+   .btn-left {
+    background-color: $backgroundDefaultColor;
+    position: absolute;
+    height: 5px;
+    width: 25px;
+    top: 30px;
+    left: 80%;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+   }
+   .btn-right {
+    background-color: $backgroundDefaultColor;
+    position: absolute;
+    height: 5px;
+    width: 25px;
+    top: 30px;
+    left: 85%;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .btn-left:before {
+    background-color: $backgroundDefaultColor;
+    position: absolute;
+    width: 25px;
+    height: 5px;
+    content: "";
+    top: -20px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .btn-left:after {
+    background-color: $backgroundDefaultColor;
+    position: absolute;
+    width: 25px;
+    height: 5px;
+    content: "";
+    top: 20px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .btn-right:before {
+    background-color: $backgroundDefaultColor;
+    position: absolute;
+    width: 25px;
+    height: 5px;
+    content: "";
+    top: -20px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .btn-right:after {
+    background-color: $backgroundDefaultColor;
+    position: absolute;
+    width: 25px;
+    height: 5px;
+    content: "";
+    top: 20px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .active .btn-left {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background: transparent;
+  }
+  .active .btn-left:before {
+    -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+    transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+  }
+  .active .btn-left:after {
+    -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+    transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+  }
+  .active .btn-right {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background: transparent;
+  }
+  .active .btn-right:before {
+    -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+    transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+  }
+  .active .btn-right:after {
+    -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+    transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+  }
     
 }
 //modo paisagem
@@ -53,9 +341,7 @@ $colorsLikert: (
     
 }
 
-@media only screen and (min-width: map-get($breakpoints, md)) {
-    
-
+@media only screen and (max-width: map-get($breakpoints, md)) {
 }
 
 @media only screen and (min-width: map-get($breakpoints, lg)) {
