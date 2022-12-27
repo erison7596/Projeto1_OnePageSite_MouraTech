@@ -153,6 +153,9 @@ body {
 }
 
 @media only screen and (max-width: 576px) and (orientation: portrait) {
+  header {
+    background-color: #000000;
+  }
   .menu_mob {
     width: 100vw;
     max-width: 100%;
@@ -165,7 +168,7 @@ body {
   }
   .menu_mob #logo {
     padding-top: 2vw;
-    width: 13vw;
+    width: 25vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,8 +213,6 @@ body {
   .container {
     float: right;
     display: block;
-    justify-content: end;
-    padding-right: 1em;
   }
   .btn {
     top: 0;
