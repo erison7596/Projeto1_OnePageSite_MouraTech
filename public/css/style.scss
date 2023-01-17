@@ -81,6 +81,21 @@ body {
 .menu_mob{
   display: none;
 }
+.btn{
+  background-color: $backgroundSecondaryColor;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  color: $fontSecondaryColor;
+  padding: 0.5em;
+  font-size: 1.5em;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    background-color: $backgroundDefaultColor;
+    color: $fontDefaultColor;
+  }
+}
 #container-inicial{
   //imagem transparente
   background-image: url("../img/Destaque_o20.png");
@@ -88,7 +103,7 @@ body {
   background-repeat: no-repeat;
   width: 100vw;
   max-width: 100%;
-  height: 92vh;
+  height: 87vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,22 +131,80 @@ body {
 #container-html{
   background-image: $gradienteHTML;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
+  display: inline-flex;
+  
+}
+.esquerda{
+  top:25vh;
+  position: relative;
+}
+.direita{
+  top:20vh;
+  position: relative;
+  text-align: center;
+  h1{
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+  h2{
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+  p{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: justify;
+    margin-bottom: 3vh;
+    width: 95%;
+  }
+}
+.direitacss{
+  top:25vh;
+  position: relative;
+}
+.esquerdacss{
+  top:20vh;
+  position: relative;
+  text-align: center;
+  h1{
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+  h2{
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+  p{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: justify;
+    margin-bottom: 3vh;
+    width: 95%;
+    margin-left: 3vh;
+  }
 }
 #container-css{
   background-image: $gradienteCSS;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
+  display: inline-flex;
 }
 #container-js{
   background-image: $gradienteJS;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
+  display: inline-flex;
 }
 #container-links{
   background-image: $gradienteLinks;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
+  
 }
 .container{
   display: none;

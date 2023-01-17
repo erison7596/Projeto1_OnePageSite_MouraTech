@@ -50,13 +50,29 @@ body {
   display: none;
 }
 
+.btn {
+  background-color: #000000;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0.5em;
+  font-size: 1.5em;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
 #container-inicial {
   background-image: url("../img/Destaque_o20.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   max-width: 100%;
-  height: 92vh;
+  height: 87vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,25 +104,85 @@ body {
 #container-html {
   background-image: linear-gradient(90deg, rgba(228, 77, 38, 0.8) 0%, rgba(241, 101, 41, 0.8) 100%);
   width: 100%;
-  height: 100vh;
+  height: 95vh;
+  display: inline-flex;
+}
+
+.esquerda {
+  top: 25vh;
+  position: relative;
+}
+
+.direita {
+  top: 20vh;
+  position: relative;
+  text-align: center;
+}
+.direita h1 {
+  font-size: 3.5em;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+.direita h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+.direita p {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: justify;
+  margin-bottom: 3vh;
+  width: 95%;
+}
+
+.direitacss {
+  top: 25vh;
+  position: relative;
+}
+
+.esquerdacss {
+  top: 20vh;
+  position: relative;
+  text-align: center;
+}
+.esquerdacss h1 {
+  font-size: 3.5em;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+.esquerdacss h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+.esquerdacss p {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: justify;
+  margin-bottom: 3vh;
+  width: 95%;
+  margin-left: 3vh;
 }
 
 #container-css {
   background-image: linear-gradient(90deg, rgba(38, 77, 228, 0.8) 0%, rgba(41, 101, 241, 0.8) 100%);
   width: 100%;
-  height: 100vh;
+  height: 95vh;
+  display: inline-flex;
 }
 
 #container-js {
   background-image: linear-gradient(90deg, rgba(229, 162, 40, 0.8) 0%, rgba(241, 191, 38, 0.8) 100%);
   width: 100%;
-  height: 100vh;
+  height: 95vh;
+  display: inline-flex;
 }
 
 #container-links {
   background-image: linear-gradient(90deg, #BBBBBB 0%, #DDDDDD 100%);
   width: 100%;
-  height: 100vh;
+  height: 95vh;
 }
 
 .container {
