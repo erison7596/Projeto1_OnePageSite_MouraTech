@@ -50,7 +50,7 @@ body {
   display: none;
 }
 
-.btn {
+.botao {
   background-color: #000000;
   border: none;
   border-radius: 50px;
@@ -61,7 +61,7 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-.btn:hover {
+.botao:hover {
   background-color: #FFFFFF;
   color: #000000;
 }
@@ -109,12 +109,12 @@ body {
 }
 
 .esquerda {
-  top: 25vh;
+  padding-top: 25vh;
   position: relative;
 }
 
 .direita {
-  top: 20vh;
+  padding-top: 20vh;
   position: relative;
   text-align: center;
 }
@@ -136,40 +136,13 @@ body {
   width: 95%;
 }
 
-.direitacss {
-  top: 25vh;
-  position: relative;
-}
-
-.esquerdacss {
-  top: 20vh;
-  position: relative;
-  text-align: center;
-}
-.esquerdacss h1 {
-  font-size: 3.5em;
-  text-align: center;
-  margin-bottom: 5vh;
-}
-.esquerdacss h2 {
-  font-size: 2.5em;
-  text-align: center;
-  margin-bottom: 3vh;
-}
-.esquerdacss p {
-  font-size: 1.5em;
-  font-weight: bold;
-  text-align: justify;
-  margin-bottom: 3vh;
-  width: 95%;
-  margin-left: 3vh;
-}
-
 #container-css {
   background-image: linear-gradient(90deg, rgba(38, 77, 228, 0.8) 0%, rgba(41, 101, 241, 0.8) 100%);
   width: 100%;
   height: 95vh;
   display: inline-flex;
+  flex-direction: row-reverse;
+  padding-left: 5vh;
 }
 
 #container-js {
@@ -183,6 +156,123 @@ body {
   background-image: linear-gradient(90deg, #BBBBBB 0%, #DDDDDD 100%);
   width: 100%;
   height: 95vh;
+  display: grid;
+  justify-content: center;
+  grid-column-gap: 45vh;
+}
+#container-links h1 {
+  display: grid;
+  font-size: 3.5em;
+  text-align: center;
+  margin-bottom: -5vh;
+  max-height: 3.5em;
+  grid-column: 1/span 3;
+  align-items: center;
+}
+#container-links .planejamento {
+  text-align: left;
+}
+#container-links .planejamento h2 {
+  padding-left: 2em;
+  margin-bottom: 3vh;
+  margin-left: 3vh;
+}
+#container-links .planejamento ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+#container-links .planejamento ul li {
+  display: flex;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3vh;
+  margin-left: 3vh;
+}
+#container-links .planejamento ul li a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-content: center;
+  flex-wrap: wrap;
+  color: #000000;
+}
+#container-links .planejamento ul li img {
+  width: 2em;
+  padding-right: 1em;
+}
+#container-links .programacao {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#container-links .programacao h2 {
+  padding-left: 2em;
+  text-align: left;
+  margin-bottom: 3vh;
+  margin-left: 3vh;
+}
+#container-links .programacao ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+#container-links .programacao ul li {
+  display: flex;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3vh;
+  margin-left: 3vh;
+}
+#container-links .programacao ul li a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-content: center;
+  flex-wrap: wrap;
+  color: #000000;
+}
+#container-links .programacao ul li img {
+  width: 2em;
+  padding-right: 1em;
+}
+#container-links .ajuda {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+#container-links .ajuda h2 {
+  padding-left: 2em;
+  text-align: left;
+  margin-bottom: 3vh;
+  margin-left: 3vh;
+}
+#container-links .ajuda ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+#container-links .ajuda ul li {
+  display: flex;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3vh;
+  margin-left: 3vh;
+}
+#container-links .ajuda ul li a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-content: center;
+  flex-wrap: wrap;
+  color: #000000;
+}
+#container-links .ajuda ul li img {
+  width: 2em;
+  padding-right: 1em;
 }
 
 .container {
@@ -195,10 +285,21 @@ body {
   width: 100%;
   height: 7vh;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
 }
-#footer p {
-  text-align: center;
+#footer img {
+  width: 2em;
+  padding-left: 1em;
+}
+#footer .init {
+  text-align: left;
+}
+#footer .fim {
+  text-align: right;
 }
 
 .back-to-top {
@@ -294,7 +395,6 @@ body {
     top: 0;
     left: 0px;
     cursor: pointer;
-    padding-bottom: 5px;
   }
   .btn-left {
     background-color: #FFFFFF;
@@ -369,5 +469,87 @@ body {
   }
   .active .btn-right:after {
     transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+  }
+  #container-html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #container-html img {
+    width: 45vw;
+  }
+  #container-html .esquerda {
+    padding-top: 5vh;
+  }
+  #container-html .direita {
+    padding-top: 5vh;
+  }
+  #container-html .direita p {
+    padding-left: 1vh;
+    width: 95%;
+  }
+  #container-html .direita h1 {
+    font-size: 2em;
+  }
+  #container-html .direita h2 {
+    font-size: 1.5em;
+  }
+  #container-html .direita p {
+    font-size: 1em;
+  }
+  #container-css {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+  #container-css img {
+    width: 45vw;
+  }
+  #container-css .esquerda {
+    padding-top: 5vh;
+  }
+  #container-css .direita {
+    padding-top: 5vh;
+  }
+  #container-css .direita p {
+    padding-left: 1vh;
+    width: 95%;
+  }
+  #container-css .direita h1 {
+    font-size: 2em;
+  }
+  #container-css .direita h2 {
+    font-size: 1.5em;
+  }
+  #container-css .direita p {
+    font-size: 1em;
+  }
+  #container-js {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #container-js img {
+    width: 45vw;
+  }
+  #container-js .esquerda {
+    padding-top: 5vh;
+  }
+  #container-js .direita {
+    padding-top: 5vh;
+  }
+  #container-js .direita p {
+    padding-left: 1vh;
+    width: 95%;
+  }
+  #container-js .direita h1 {
+    font-size: 2em;
+  }
+  #container-js .direita h2 {
+    font-size: 1.5em;
+  }
+  #container-js .direita p {
+    font-size: 1em;
   }
 }/*# sourceMappingURL=style.css.map */
